@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor/globals';
 
-export class TSTCliPage {
+export class TstCliPage {
   navigateTo() {
     return browser.get('/');
   }

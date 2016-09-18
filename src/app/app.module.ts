@@ -3,23 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// Material2 
-import { MdButtonModule } from '@angular2-material/button';
-import { MdCardModule } from '@angular2-material/card';
 // Materialize
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, HeaderComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MdButtonModule,MdCardModule,
     MaterializeModule
   ],
   providers: [],

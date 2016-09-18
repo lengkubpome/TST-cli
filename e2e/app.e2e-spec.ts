@@ -1,10 +1,10 @@
-import { TSTCliPage } from './app.po';
+import { TstCliPage } from './app.po';
 
 describe('tst-cli App', function() {
-  let page: TSTCliPage;
+  let page: TstCliPage;
 
   beforeEach(() => {
-    page = new TSTCliPage();
+    page = new TstCliPage();
   });
 
   it('should display message saying app works', () => {
