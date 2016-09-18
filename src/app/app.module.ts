@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing } from './app.routing';
 
 // Materialize
 import { MaterializeModule } from 'angular2-materialize';
@@ -9,16 +10,20 @@ import { MaterializeModule } from 'angular2-materialize';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { WeightingComponent } from './weighting/weighting.component';
+import { SideNavComponent } from './shared/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent
+    AppComponent, HeaderComponent, FooterComponent, HomeComponent, WeightingComponent, SideNavComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterializeModule
+    MaterializeModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
