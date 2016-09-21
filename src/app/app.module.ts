@@ -13,7 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { WeightingComponent } from './weighting/weighting.component';
 import { SideNavComponent } from './shared/side-nav/side-nav.component';
-import { MDLUpgradeElementDirective } from './mdlupgrade-element.directive';
+import { MDLUpgradeElementDirective } from './shared/mdlupgrade-element.directive';
 
 @NgModule({
   declarations: [
