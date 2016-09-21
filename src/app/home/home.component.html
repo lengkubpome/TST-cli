@@ -1,14 +1,22 @@
 <p>
   home works!
 </p>
+<!-- Textfield with Floating Label -->
+<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">account_box</div>
+<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥">account_box</div>
 
-<!-- Dropdown Trigger -->
-  <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
 
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input mdl class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Text...</label>
+  </div>
+</form>
+<!-- Numeric Textfield with Floating Label -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+    <label class="mdl-textfield__label" for="sample4">Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>

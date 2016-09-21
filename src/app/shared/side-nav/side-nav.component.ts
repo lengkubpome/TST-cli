@@ -12,4 +12,9 @@ export class SideNavComponent implements OnInit {
   ngOnInit() {
   }
 
+  testSideNav(){
+    console.log("Click Side Nav");
+    
+  }
+
 }

@@ -1,8 +1,10 @@
 
 	#footer {
+		bottom: 0;
 		padding: 4em 0 2em 0;
 		background: #1c1c1c;
 		text-align: center;
+		position: relative;
 	}
 
 		#footer a {
