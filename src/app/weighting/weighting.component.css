@@ -1,14 +1,22 @@
- .wide-card.mdl-card {
+ .wide-card {
          width: 100%;
       }
 .demo-list-two {
   width: auto;
 }
 .mdl-list__item:hover{
-      background-color: lightpink;
+      background-color: lightslategrey;
 }
 
 .testx{
       width: 100%;
       height: 60px;
 }
+
+.text_size{
+      /*color: red;*/
+      font-size: 2em;
+      text-align: right;
+
+}
+
