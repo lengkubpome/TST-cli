@@ -5,108 +5,164 @@
     <div class="mdl-cell mdl-cell--9-col mdl-color--grey-300">
 
 
-
-
-        <div class="wide-card mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
+        <div class="wide-card mdl-card mdl-shadow--2dp card-x">
+<!-- Title Card -->
+           <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">ใบชั่งน้ำหนักรถ</h2>
             </div>
             <form action="#">
-                <div class="mdl-card__supporting-text mdl-card--border">
+                <div class="mdl-card__actions">
+<!-- Grid -->
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--7-col">
 
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:30%;">
                                 <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-                                <label class="mdl-textfield__label" for="sample4">ทะเบียนรถ</label>
+                                <label class="mdl-textfield__label" for="sample4">ทะเบียนรถุ</label>
                                 <span class="mdl-textfield__error">Input is not a number!</span>
                             </div>
                             <div style="display: initial;">
+
+                                <i class="material-icons">more_vert</i>
+                                <!-- Deletable Chip -->
+                                <span class="mdl-chip mdl-chip--deletable" style="position: relative; bottom: 13px;">
+                                <span class="mdl-chip__text">กอ-9555 ขอนแก่น</span>
+                                <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+                                </span>
+
                                 <i class="material-icons mdl-color-text--light-green">done</i>
                                 <i class="material-icons  mdl-color-text--red">cancel</i>
                                 <!-- MDL Spinner Component -->
                                 <div class="mdl-spinner mdl-js-spinner is-active"></div>
                             </div>
-
-
-
                             <br>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:50%;">
                                 <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
                                 <label class="mdl-textfield__label" for="sample4">ลูกค้า</label>
                                 <span class="mdl-textfield__error">Input is not a number!</span>
                             </div>
-                            <br>
 
-
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                             <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:50%;">
                                 <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                                <label class="mdl-textfield__label" for="sample4">สถานที่นำส่ง</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>-->
+                            <br>
+<!-- ประเภทสินค้า-->
+                            <div class="dropdown-x mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:30%;">
+                                <select class="dropdown-content mdl-textfield__input ">
+                                    <option value=""></option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                                <!--<input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">-->
                                 <label class="mdl-textfield__label" for="sample4">ประเภทสินค้า</label>
                                 <span class="mdl-textfield__error">Input is not a number!</span>
+
+
+
                             </div>
-                            <br>
+                            <div style="display: initial;">
+                                <i class="material-icons">more_vert</i>
 
+                            </div>
 
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100px;">
                                 <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
                                 <label class="mdl-textfield__label" for="sample4">ราคา/หน่วย</label>
                                 <span class="mdl-textfield__error">Input is not a number!</span>
                             </div>
 
-                        </div>
-                        <div class="mdl-cell mdl-cell--5-col" >
 
+                        </div>
+<!-- ใบชั่งข้างซ้าย -->
+                        <div class="mdl-cell mdl-cell--5-col">
+<!-- น้ำหนักเข้า-->
                             <div>
-                                <span class="mdl-chip">
-                                    <span class="mdl-chip__text" style="vertical-align: baseline;">น้ำหนักเข้า</span>
+                                <span class="mdl-chip--contact" style="    position: absolute;    margin: 10px 0px;">
+                                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">เข้า</span>
                                 </span>
-                                <div class="mdl-textfield mdl-js-textfield" style="width:50%; ">
+                                <div class="mdl-textfield mdl-js-textfield" style="padding-top: 0; padding-left: 45px; width: 90%;">
                                     <input class="mdl-textfield__input" type="text" style="border-bottom:2px solid; font-size: 2em;   text-align: right; " type="text"
                                         value="99999">
-
+                                    <label style=" position: absolute; right: 0; font-size: 0.8em; bottom: -0em;">
+                                        26/9/2016, 15:27
+                                        </label>
+                                    <small style="position: absolute; right: -25px; bottom: 30px;">กก.</small>
                                 </div>
-                                <small>kg.</small>
-                                <!-- MDL Spinner Component -->
-                                <!--<div class="mdl-spinner mdl-js-spinner is-active"></div>-->
+
                             </div>
                             <br>
-
+<!-- น้ำหนักออก-->
                             <div>
-                                <span class="mdl-chip">
-                                    <span class="mdl-chip__text" style="vertical-align: baseline;">น้ำหนักออก</span>
+                                <span class="mdl-chip--contact" style=" position: absolute;    margin: 10px 0px;">
+                                    <span class="mdl-chip__contact mdl-color--red mdl-color-text--white">ออก</span>
                                 </span>
-                                <div class="mdl-textfield mdl-js-textfield" style="width:50%; ">
-                                    <input class="mdl-textfield__input" type="text" style="border-bottom:2px solid; font-size: 2em;   text-align: right; " type="text"
+                                <div class="mdl-textfield mdl-js-textfield" style="padding-top: 0; padding-left: 45px; width: 90%;">
+                                    <input class="mdl-textfield__input" type="text" style="border-bottom:2px solid; font-size: 2em; text-align: right; " type="text"
                                         value="99999">
+                                    <label style="position: absolute; right: 0; font-size: 0.8em; bottom: -0em;">
+                                        26/9/2016, 15:27
+                                        </label>
 
-                                </div>
-                                <small>kg.</small>
-                                <!-- MDL Spinner Component -->
-                                <!--<div class="mdl-spinner mdl-js-spinner is-active"></div>-->
+                                    <small style="position: absolute; right: -25px; bottom: 30px;">กก.</small> </div>
                             </div>
-
-
-
-
 
                         </div>
 
                     </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col  line-x" style="text-align: center;position: relative;">
+                               <div style="    border-top: 1px solid; margin: 0; width: 100%;  position: absolute; top: 50%; z-index:-1"> </div>
+                             
+                             <span class="mdl-chip--contact" style=" ">
+                                        <span class="mdl-chip__contact mdl-color--red mdl-color-text--white">ปรับ</span>
+                                        
+                            </span>
+                          
+                        </div>
+                        <div class="mdl-cell mdl-cell--7-col ">
+xx<br><br><br><br>
+...<br>
+                        </div>
+<!-- รายการเพิ่มเติม-->
+                        <div class="mdl-cell mdl-cell--5-col mdl-cell--bottom ">
+                             <div>
+                                <span class="mdl-chip--contact" style=" position: absolute;    margin: 10px 0px;">
+                                        <span class="mdl-chip__contact mdl-color--red mdl-color-text--white">ปรับ</span>
+                                    </span>
+                                    <div class="mdl-textfield mdl-js-textfield" style="padding-top: 0; padding-left: 45px; width: 90%;">
+                                        <input class="mdl-textfield__input" type="text" style=" font-size: 1.5em; text-align: right; " type="text"
+                                            value="50">
+                                    
+
+                                        <small style="position: absolute; right: -25px; bottom: 30px;">กก.</small> </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    ส่วนที่ 2
+                    <div class="" style="  text-align: center;">
+                        <p> สรุป</p>
+                    </div>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--8-col">
 
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-                                <label class="mdl-textfield__label" for="sample4">ทะเบียนรถ</label>
-                                <span class="mdl-textfield__error">Input is not a number!</span>
-                            </div>
-
-                            <a mdl href="" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
-                            <!-- Deletable Contact Chip -->
+                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+  <span class="mdl-radio__label">First</span>
+</label>
+                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+  <span class="mdl-radio__label">Second</span>
+</label>
 
 
                         </div>
@@ -120,6 +176,7 @@
                             บันทึกข้อมูล
                         </button>
                     </div>
+
                 </div>
             </form>
             <div class="mdl-card__menu">
@@ -140,10 +197,10 @@
                 </ul>
             </div>
         </div>
-
-
+        <!-- End Card  -->
 
     </div>
+    <!-- End first column -->
 
     <div class="mdl-cell mdl-cell--3-col  mdl-color--grey-300">
 
@@ -184,13 +241,6 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
 
 
     </div>
