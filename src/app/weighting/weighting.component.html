@@ -4,11 +4,20 @@
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--9-col mdl-color--grey-300">
 
-
-        <div class="wide-card mdl-card mdl-shadow--2dp card-x">
+        <div class="weighting-card mdl-card mdl-shadow--2dp card-x">
             <!-- Title Card -->
-            <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">ใบชั่งน้ำหนักรถ <i class="material-icons">error_outline</i></h2>
+            <div class="mdl-card__title ">
+                <h2 class="mdl-card__title-text" style="position: absolute; top: 20px;">
+                    ใบชั่งน้ำหนักรถ </h2>
+                <br>
+              
+                <div class="mdl-layout-spacer"></div>
+                   <span class="mdl-chip mdl-chip--contact" style="    margin-top: 120px;">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">ID</span>
+                <span class="mdl-chip__text" >36868</span>
+                </span>
+                
+
             </div>
             <form action="#">
                 <div class="mdl-card__actions">
@@ -44,7 +53,7 @@
                                 <span class="mdl-textfield__error">Input is not a number!</span>
                             </div>
 
-                            
+
                             <br>
                             <!-- ประเภทสินค้า-->
                             <div class="dropdown-x mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:30%;">
@@ -61,7 +70,7 @@
                                 <span class="mdl-textfield__error">Input is not a number!</span>
                             </div>
 
-                                &nbsp;
+                            &nbsp;
 
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100px;">
                                 <input mdl class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
@@ -116,7 +125,8 @@
 
 
                 <!-- การปรับสิ่งปลอมปน -->
-                <div hidden class="mdl-card__actions" style=" background: lightgray; padding-top: 0; padding-bottom: 0;  position: relative;">
+                <!-- Hidden here-->
+                <div class="mdl-card__actions" style=" background: lightgray; padding-top: 0; padding-bottom: 0;  position: relative;">
 
 
                     <button id="tt4" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect mdl-button--colored"
@@ -129,7 +139,7 @@
                         ปรับน้ำหนักสินค้า
                     </div>
 
-
+                    <!-- Hidden here-->
                     <div hidden class="mdl-grid" style="padding-top : 30px;">
                         <div class="mdl-cell mdl-cell--7-col" style=" padding-left: 50px;">
 
@@ -178,11 +188,17 @@
 
                     </div>
                 </div>
-
-                <div hidden class="mdl-card__actions ">
+                <!-- Hidden here-->
+                <div class="mdl-card__actions ">
 
                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--7-col ">
+                        <div class="mdl-cell mdl-cell--7-col mdl-cell--bottom">
+
+                            
+                            <div class="mdl-textfield mdl-js-textfield" style="width:70% ">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label" for="sample5">คำอธิบายเพิ่มเติม</label>
+                            </div>
                         </div>
                         <!-- รายการเพิ่มเติม-->
                         <div class="mdl-cell mdl-cell--5-col mdl-cell--bottom ">
@@ -227,29 +243,33 @@
 
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                             บันทึกข้อมูล
-                        </button> 
-                        &nbsp;
+                        </button> &nbsp;
                         <button class="mdl-button mdl-js-button mdl-button--accent">
                             ยกเลิก
                         </button>
+                        <div class="mdl-layout-spacer"></div>
+                          
+               
+                        <!--<a>ผู้บันทึกข้อมูล : นายเกียรติพงศ์ แซ่ตั้ง</a>-->
                     </div>
 
                 </div>
             </form>
             <div class="mdl-card__menu">
 
-                <!-- Right aligned menu below button -->
-                <button mdl id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+            
+
+                 <button mdl id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" style="  color: #fff;">
                     <i class="material-icons">more_vert</i>
                 </button>
-                <ul class="menu-r mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                <ul class="menu-r mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect " for="demo-menu-lower-right">
                     <li class="mdl-menu__item">Some Action</li>
                     <li class="mdl-menu__item">Another Action</li>
                     <li disabled class="mdl-menu__item">Disabled Action</li>
                     <li class="mdl-menu__item">Yet Another Action</li>
                 </ul>
 
-                
+
             </div>
         </div>
         <!-- End Card  -->
@@ -259,7 +279,7 @@
 
     <div class="mdl-cell mdl-cell--3-col  mdl-color--grey-300">
 
-        <div class="mdl-card wide-card mdl-shadow--2dp" style="height:100%;">
+        <div class="mdl-card wide-card mdl-shadow--2dp" style="height:100%; width:100%">
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">รายการรถเข้า</h2>
             </div>

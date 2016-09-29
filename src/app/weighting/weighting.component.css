@@ -1,6 +1,20 @@
-.wide-card {
+
+button, input{
+        font-family: 'Mitr',"Helvetica","Arial",sans-serif;
+}
+
+.weighting-card {
          width: 100%;
-      }
+ }
+
+.weighting-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../../assets/images/welcome_card.jpg') center / cover;
+}
+.weighting-card  > .mdl-card__menu {
+  color: #fff;
+}
 .demo-list-two {
   width: auto;
 }
