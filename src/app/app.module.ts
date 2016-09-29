@@ -13,10 +13,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { WeightingComponent } from './weighting/weighting.component';
 import { MDLUpgradeElementDirective } from './shared/mdlupgrade-element.directive';
+import { WeightingInComponent } from './weighting/weighting-in/weighting-in.component';
+import { WeightingOutComponent } from './weighting/weighting-out/weighting-out.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent, HomeComponent, WeightingComponent, MDLUpgradeElementDirective
+    AppComponent, HeaderComponent, FooterComponent, HomeComponent, WeightingComponent, MDLUpgradeElementDirective, WeightingInComponent, WeightingOutComponent
   ],
   imports: [
     BrowserModule,
