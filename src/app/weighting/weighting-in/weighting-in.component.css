@@ -11,6 +11,7 @@ button, input{
   color: #fff;
   height: 68px;
   background: url('../../assets/images/welcome_card.jpg') center / cover;
+      /*background: #424242;*/
 }
 .weighting-card  > .mdl-card__menu {
   color: #fff;
@@ -44,3 +45,4 @@ button, input{
 .card-x{
       overflow: visible;
 }
+
