@@ -1,16 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 
-// export interface WeightingCar {
-//     id: number;
-//     carId: string;
-//     product: string;
-//     weightIn: number;
-//     weightOut: number;
-//     _dateIn: Date;
-//     _dateOut: Date;
-//     customerId?: number;
-// }
+export interface IWeightingCar {
+  id: number,
+  carId: string,
+  product: string,
+  price: number,
+  weightIn: number,
+  weightOut: number,
+  dateIn: Date,
+  dateOut: Date,
+  cutWeightByUnit?: number,
+  cutWeightByPercent?: number,
+  customerId?: number
+}
 
 export class WeightingCar {
   constructor(
@@ -31,7 +34,7 @@ export class WeightingCar {
   ) { }
 }
 
-let ListWeightingCar: WeightingCar[] = [
+let ListWeightingCar: IWeightingCar[] = [
   { id: 1, carId: '9555', product: 'เหล็ก', price: 0, dateIn: null, dateOut: null, customerId: 0, weightIn: 8300, weightOut: 3020, cutWeightByPercent: null, cutWeightByUnit: null },
   { id: 2, carId: '9135', product: 'กระดาษสี', price: 0, dateIn: null, dateOut: null, customerId: 0, weightIn: 9000, weightOut: 3020, cutWeightByPercent: null, cutWeightByUnit: null },
   { id: 3, carId: '1818', product: 'กระดาษกล่อง', price: 0, dateIn: null, dateOut: null, customerId: 0, weightIn: 7090, weightOut: 3020, cutWeightByPercent: null, cutWeightByUnit: null },
@@ -43,7 +46,7 @@ let ListWeightingCar: WeightingCar[] = [
 export class WeightingService {
 
   constructor() { }
-  getListWiegtingIn() {
+  getListWeightingIn() {
     return Promise.resolve(ListWeightingCar); //ค่อยจัดการเรื่องจากส่งค่าเฉพาะรายการที่เป็น WeightIn อย่างเดียว 
     // return ListWeightingCar;
   }

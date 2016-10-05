@@ -1,3 +1,32 @@
-<p>
-  check-in-list works!
-</p>
+<div class="mdl-card wide-card mdl-shadow--2dp" style="height:100%; width:100%">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">รายการรถเข้า</h2>
+  </div>
+
+  <div class="mdl-card__supporting-text" style="padding: 16px 0 16px 0; width: 100%;">
+
+    <div class="mdl-list">
+      <a class="mdl-list__item mdl-list__item--two-line " 
+        *ngFor="let weightIn of listWeightIn" 
+        (click)="onSelect(weightIn)">
+
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons mdl-list__item-avatar">person</i>
+          <span>{{weightIn.carId}}</span>
+        <span class="mdl-list__item-sub-title">นายเกียรติพงศ์ แซ่ตั้ง</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+        
+          <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+        </span>
+      </a>
+
+
+
+    </div>
+
+
+
+
+  </div>
+</div>

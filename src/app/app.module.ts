@@ -12,7 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { WeightingComponent } from './weighting/weighting.component';
 import { MDLUpgradeElementDirective } from './shared/mdlupgrade-element.directive';
 
-import { WeightingOutComponent } from './weighting/weighting-out/weighting-out.component';
 import { WeightWatchersComponent } from './weighting/weight-watchers/weight-watchers.component';
 import { CheckInComponent } from './weighting/check-in/check-in.component';
 import { CheckOutComponent } from './weighting/check-out/check-out.component';
@@ -30,7 +29,6 @@ import {WeightingService}  from './weighting/weighting.service';
     HomeComponent, 
     WeightingComponent, 
     MDLUpgradeElementDirective, 
-    WeightingOutComponent, 
     WeightWatchersComponent, CheckInComponent, CheckOutComponent, CheckInListComponent
   ],
   imports: [

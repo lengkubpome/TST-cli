@@ -1,0 +1,46 @@
+
+button, input{
+        font-family: 'Mitr',"Helvetica","Arial",sans-serif;
+}
+
+.weighting-card {
+         width: 100%;
+ }
+
+.weighting-card > .mdl-card__title {
+  color: #fff;
+  height: 68px;
+  background: url('../../assets/images/welcome_card.jpg') center / cover;
+}
+.weighting-card  > .mdl-card__menu {
+  color: #fff;
+}
+.demo-list-two {
+  width: auto;
+}
+.mdl-list__item:hover{
+      background-color: lightslategrey;
+}
+
+.testx{
+      width: 100%;
+      height: 60px;
+}
+
+.text_size{
+      /*color: red;*/
+      font-size: 2em;
+      text-align: right;
+
+}
+
+
+
+.dropdown-content {
+
+    z-index: 3;
+}
+
+.card-x{
+      overflow: visible;
+}

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { WeightingCar, WeightingService } from '../weighting.service';
+
 
 @Component({
   selector: 'app-check-in-list',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckInListComponent implements OnInit {
 
-  constructor() { }
+  private listWeightIn: Object[];
+  private weightInLenth: number;
+
+  // @Input('refresh') isRefresh: boolean;
+  @Output() select: EventEmitter<Object> = new EventEmitter(true);
+
+  constructor(private _weightingService: WeightingService) { }
 
   ngOnInit() {
+    this.getListWeightIn();
   }
+
+  onSelect(_weightingIn: WeightingCar) {
+    this.select.emit(_weightingIn);
+  }
+
+  getListWeightIn() {
+    this._weightingService.getListWeightingIn()
+      .then(listWeightIn => this.listWeightIn = listWeightIn);
+
+    this._weightingService.getLength()
+      .then(length => this.weightInLenth = length);
+  }
+
 
 }
