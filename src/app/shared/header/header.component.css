@@ -1,4 +1,5 @@
 
-.active{
-    background-color : rebeccapurple;
+nav > a.active{
+    color: black;
+    font-size: 1.5em;
 }

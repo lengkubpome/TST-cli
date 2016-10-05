@@ -1,0 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-check-in',
+  templateUrl: './check-in.component.html',
+  styleUrls: ['./check-in.component.css']
+})
+export class CheckInComponent implements OnInit {
+
+   products = ['เหล็กรวม','เหล็กหนา', 'กระดาษ', 'กระป๋อง', 'สังกะสี'];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

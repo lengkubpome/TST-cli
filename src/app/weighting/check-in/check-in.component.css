@@ -23,26 +23,9 @@ button, input{
       background-color: lightslategrey;
 }
 
-.testx{
-      width: 100%;
-      height: 60px;
-}
-
-.text_size{
-      /*color: red;*/
-      font-size: 2em;
-      text-align: right;
-
-}
-
-
 
 .dropdown-content {
-
-    z-index: 3;
+    z-index: 2;
 }
 
-.card-x{
-      overflow: visible;
-}
 

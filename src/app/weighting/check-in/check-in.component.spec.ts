@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { WeightingInComponent } from './weighting-in.component';
+import { CheckInComponent } from './check-in.component';
 
-describe('Component: WeightingIn', () => {
+describe('Component: CheckIn', () => {
   it('should create an instance', () => {
-    let component = new WeightingInComponent();
+    let component = new CheckInComponent();
     expect(component).toBeTruthy();
   });
 });

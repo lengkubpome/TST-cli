@@ -4,21 +4,34 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
-// Materialize
-import { MaterializeModule } from 'angular2-materialize';
-
+// Component
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { WeightingComponent } from './weighting/weighting.component';
 import { MDLUpgradeElementDirective } from './shared/mdlupgrade-element.directive';
-import { WeightingInComponent } from './weighting/weighting-in/weighting-in.component';
+
 import { WeightingOutComponent } from './weighting/weighting-out/weighting-out.component';
+import { WeightWatchersComponent } from './weighting/weight-watchers/weight-watchers.component';
+import { CheckInComponent } from './weighting/check-in/check-in.component';
+import { CheckOutComponent } from './weighting/check-out/check-out.component';
+import { CheckInListComponent } from './weighting/check-in-list/check-in-list.component';
+
+// service
+import {WeightingService}  from './weighting/weighting.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent, HomeComponent, WeightingComponent, MDLUpgradeElementDirective, WeightingInComponent, WeightingOutComponent
+    AppComponent, 
+    HeaderComponent, 
+    FooterComponent, 
+    HomeComponent, 
+    WeightingComponent, 
+    MDLUpgradeElementDirective, 
+    WeightingOutComponent, 
+    WeightWatchersComponent, CheckInComponent, CheckOutComponent, CheckInListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +40,9 @@ import { WeightingOutComponent } from './weighting/weighting-out/weighting-out.c
     // MaterializeModule,
     routing
   ],
-  providers: [],
+  providers: [
+    WeightingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
